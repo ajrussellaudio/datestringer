@@ -35,6 +35,7 @@ To run the test suite:
 ```bash
 $ yarn install # install dependencies
 $ yarn test # run tests
+$ yarn test --coverage # 100% coverage yo
 ```
 
 ## Todo
