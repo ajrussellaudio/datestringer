@@ -1,6 +1,6 @@
 import { parseOpCode } from '../parseOpCode/parseOpCode';
 
-export function arithmetic(date: Date, opCode: OpCode): Date {
+export function arithmetic(date: Date, opCode: string): Date {
   const { operation, quantity, unit } = parseOpCode(opCode);
   const offset = quantity * (operation === '+' ? 1 : -1);
 
