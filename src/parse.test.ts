@@ -1,9 +1,11 @@
 import { parse } from './parse';
 
-// Given the current date and time is 2020-05-01T00:00:00:
-jest.useFakeTimers('modern').setSystemTime(new Date('2020-05-01T00:00:00').getTime());
-
 describe('parse', () => {
+  beforeAll(() => {
+    // Given the current date and time is 2020-05-01T00:00:00:
+    jest.useFakeTimers('modern').setSystemTime(new Date('2020-05-01T00:00:00').getTime());
+  });
+
   test('now minus one year rounded to the nearest year', () => {
     expect(parse('now-1y/y')).toEqual(new Date('2019-01-01T00:00:00'));
   });
