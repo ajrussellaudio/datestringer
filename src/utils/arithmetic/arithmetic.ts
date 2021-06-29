@@ -22,6 +22,7 @@ export function arithmetic(date: Date, opCode: string): Date {
     h: 1000 * 60 * 60,
     d: 1000 * 60 * 60 * 24,
     w: 1000 * 60 * 60 * 24 * 7,
+    D: 1000 * 60 * 60 * 24 * 23.5,
   };
 
   return new Date(date.getTime() + milliseconds[unit] * offset);

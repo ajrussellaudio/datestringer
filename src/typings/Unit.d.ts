@@ -5,4 +5,5 @@ type Unit =
   | 'd' // day of month (e.g. 1-31)
   | 'h' // hour
   | 'm' // minute
-  | 's'; // second
+  | 's' // second
+  | 'D'; // delta

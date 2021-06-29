@@ -2,7 +2,7 @@ import { arithmetic } from './utils/arithmetic/arithmetic';
 import { round } from './utils/round';
 
 function getOpCodes(datestring: DateString): string[] {
-  const opCodePattern = /[+-]\d+[yMwdhms]/g;
+  const opCodePattern = /[+-]\d+[yMwdhmsD]/g;
   const opCodes = datestring.match(opCodePattern);
   return opCodes || [];
 }
